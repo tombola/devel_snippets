@@ -1,11 +1,24 @@
-<?php // generate features permissions code for all permissions for just one role
+<?php 
+
+/*
+ * When Features UI exports a permission it exports it for all roles.
+ *
+ * If it is necessary to export the permission state as it affects just one or two roles
+ * this is not possible through the UI (eg http://drupal.org/comment/reply/656312/6347318)
+ * if the code for a single role permission is generated auto-manually then it works fine
+ * and is not overridden by changes to the permission value for other roles
+ *
+ * Run the following code through devel/php on a working site and then copy the resulting code
+ * into the .module and .info files to use
+ *
+ */
+// generate features permissions code for all permissions for just one role
 
 $single_role = 'research management';
 $specified_roles = array(
-  'research management',
-  'research coordinator',
-  'research curator',
-  'research director',
+  'role1',
+  'role2',
+  'role3',
   );
 
 $roles = array_flip(user_roles());
