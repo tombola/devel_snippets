@@ -2,4 +2,8 @@ IMPORTANT: Do not use these snippets on a production site!
 
 I created these script snippets to use by running them in the devel module's php window. This means that they are run after drupal is bootstrapped. You could also run them using drush eval, but you might get problems with unescaped characters.
 
-The snippets are for very specific one time only instances, if they were re-usable or more generally useful I would have put the code into modules. I could do this if anything became particularly useful. 
+The snippets are for very specific one time only instances, if they were re-usable or more generally useful I would have put the code into modules. I could do this if anything became particularly useful.
+
+NOTE: I have been using the content_type_groups module to ease the administration and grouping (in views) of content type
+
+(http://drupal.org/project/content_type_groups)

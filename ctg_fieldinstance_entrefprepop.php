@@ -36,7 +36,7 @@ foreach($ctg as $name => $machine_name) {
         'skip_perm' => 'access administration menu',
         );
       unset($instance['settings']['behaviours']);
-      //field_update_instance($instance);
+      field_update_instance($instance);
       dpm($instance);
     }
   
